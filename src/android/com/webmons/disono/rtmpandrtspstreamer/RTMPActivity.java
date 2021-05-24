@@ -151,6 +151,8 @@ public class RTMPActivity extends CordovaActivity implements ConnectCheckerRtmp 
         _UIListener();
         _commentContainer(false);
         _broadcastRCV();
+
+        new android.os.Handler().postDelayed(this::_startStreaming, 1000);
     }
 
     @Override
